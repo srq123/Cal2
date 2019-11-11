@@ -1,3 +1,11 @@
 <resources>
+     <string name="Help">
+        不能出现任何数除与0的运算！\
+        该运算器没有实现%，^和π的功能，请勿点击！\
+        运算符身边没有数字，则无法连接另一个运算符!\
+        感谢您的阅读！
+    </string>
+
     <string name="app_name">Cal1</string>
+    <string name="title_activity_help">HelpActivity</string>
 </resources>

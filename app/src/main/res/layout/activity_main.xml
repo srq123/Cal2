@@ -13,7 +13,7 @@
         android:orientation="vertical"
         tools:context=".MainActivity" >
 
-        <EditText
+        <TextView
 
             android:id="@+id/edt1_show"
             android:layout_width="match_parent"
@@ -171,12 +171,19 @@
             android:layout_weight="2"
             android:orientation="horizontal" >
             <Button
-                android:id="@+id/btn_m3"
+                android:id="@+id/btn_A"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
                 android:background="#ffffff"
-                android:text="m³" />
+                android:text="A" />
+            <Button
+                android:id="@+id/btn_B"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="#ffffff"
+                android:text="B" />
             <Button
                 android:id="@+id/btn_jin16"
                 android:layout_width="50dp"
@@ -229,19 +236,27 @@
             android:layout_weight="2"
             android:orientation="horizontal" >
             <Button
-                android:id="@+id/btn_mm"
+                android:id="@+id/btn_C"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
                 android:background="#ffffff"
-                android:text="MM" />
+                android:text="C" />
+            <Button
+                android:id="@+id/btn_D"
+                android:layout_width="51dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="#ffffff"
+                android:text="D" />
+
             <Button
                 android:id="@+id/btn_cm"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
                 android:background="#ffffff"
-                android:text="CM" />
+                android:text="cm" />
 
             <Button
                 android:id="@+id/btn_xx"
@@ -290,6 +305,20 @@
             android:layout_height="0dp"
             android:layout_weight="2"
             android:orientation="horizontal" >
+            <Button
+                android:id="@+id/btn_E"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="E" />
+            <Button
+                android:id="@+id/btn_F"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="F" />
 
             <Button
                 android:id="@+id/btn_m"
@@ -297,14 +326,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#ffffff"
-                android:text="M" />
-            <Button
-                android:id="@+id/btn_dm"
-                android:layout_width="5dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#ffffff"
-                android:text="DM" />
+                android:text="m" />
+
             <Button
                 android:id="@+id/btn_3x"
                 android:layout_width="0dp"
