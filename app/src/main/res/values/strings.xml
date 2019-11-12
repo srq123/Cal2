@@ -5,7 +5,7 @@
         运算符身边没有数字，则无法连接另一个运算符!\
         感谢您的阅读！
     </string>
-
     <string name="app_name">Cal1</string>
     <string name="title_activity_help">HelpActivity</string>
+    <string name="help">帮助界面</string>
 </resources>

@@ -7,16 +7,16 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.util.Log;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.Stack;
-public class MainActivity extends Activity{
+public class MainActivity extends AppCompatActivity {
     private Button btn_1;
     private Button btn_2;
     private Button btn_3;
@@ -72,17 +72,21 @@ public class MainActivity extends Activity{
     boolean flag;
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-           getMenuInflater().inflate(R.menu.main,menu);
-            return true;
+        getMenuInflater().inflate(R.menu.main,menu);
+        return super.onCreateOptionsMenu(menu);
     }
-    public boolean onOptionsItemSelected(MenuItem item) {
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
-            case R.id.option_normal_1:
+            case R.id.help:
                 Intent intent = new Intent(MainActivity.this,HelpActivity.class);
                 startActivity(intent);
+                break;
         }
-        return true;
+        return super.onOptionsItemSelected(item);
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //去掉状态栏
